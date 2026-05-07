@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-이 프로젝트는 Kaggle의 YelpZip dataset을 활용하여 조직적 리뷰 어뷰징을 탐지하기 위한 baseline model을 구축한 작업이다. 최종 모델 개발보다는 딥러닝 기반 분류 모델과 GNN 기반 분류 모델의 전체 흐름을 이해하고, MLP baseline과 GraphSAGE baseline의 성능을 비교하는 것을 목표로 한다.
+ Kaggle의 YelpZip dataset을 활용하여 조직적 리뷰 어뷰징을 탐지하기 위한 baseline model을 구축한 작업이다.
 
 본 프로젝트에서는 review 하나를 하나의 node로 정의하고, 각 review의 feature와 review 간 edge 정보를 활용하여 label을 예측한다.
 
@@ -13,7 +13,7 @@
 
 ## 2. Dataset
 
-사용 데이터는 YelpZip dataset이다. 원본 데이터는 약 60만 개 이상의 review로 구성되어 있으며, 주요 column은 다음과 같다.
+ YelpZip dataset은 60만 개 이상의 review로 구성되어 있으며, 주요 column은 다음과 같다.
 
 | Column | 설명 |
 |---|---|
@@ -148,10 +148,6 @@ GraphSAGE는 연결된 이웃 node의 feature를 aggregate하여 각 node의 rep
 |---|---:|---:|---:|
 | MLP | 0.8527 | 0.6091 | 0.2514 |
 | GraphSAGE | 0.8447 | 0.6136 | 0.2632 |
-
-GraphSAGE는 MLP보다 `Accuracy`는 소폭 낮았지만, `Macro F1`과 `PR-AUC`는 개선되었다. 특히 fraud class의 recall이 MLP보다 상승하여, graph structure가 사기 리뷰 탐지에 일부 도움을 준 것으로 해석할 수 있다.
-
-다만 성능 향상 폭이 크지는 않으며, fraud class의 precision과 recall이 여전히 낮기 때문에 최종 모델로 사용하기에는 한계가 있다. 본 결과는 GraphSAGE baseline이 MLP baseline보다 관계 정보를 일부 활용했다는 초기 실험 결과로 해석하는 것이 적절하다.
 
 
 
