@@ -1,0 +1,18 @@
+{
+    "sample_size": 15000,
+    "random_state": 42,
+    "feature_cols": [
+        "rating",
+        "text_length",
+        "word_count",
+        "user_review_count",
+        "prod_review_count",
+        "days_from_start"
+    ],
+    "split_ratio": {
+        "train": 0.64,
+        "valid": 0.16,
+        "test": 0.2
+    },
+    "mlp_best_threshold": 0.6700000000000002
+}

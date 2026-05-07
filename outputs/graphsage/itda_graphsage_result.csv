@@ -1,0 +1,2 @@
+﻿model,test_accuracy,test_macro_f1,test_pr_auc,best_valid_pr_auc,best_valid_macro_f1,best_threshold,true_negative,false_positive,false_negative,true_positive,undirected_pair_count,directed_edge_count,note
+GraphSAGE,0.8446666666666667,0.6135559486952675,0.26322364204070237,0.2272599410567232,0.5918061025698186,0.6800000000000002,2427,259,207,107,1488139,2976278,"R-U-R + Product-Time 30 days, GraphSAGE baseline"

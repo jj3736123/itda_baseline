@@ -1,0 +1,2 @@
+﻿model,test_accuracy,test_macro_f1,test_pr_auc,best_threshold,note
+MLP,0.8526666666666667,0.6091465600181102,0.25139597572686095,0.6700000000000002,threshold tuned on valid macro f1

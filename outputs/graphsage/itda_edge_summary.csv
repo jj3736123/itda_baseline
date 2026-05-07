@@ -1,0 +1,5 @@
+﻿item,count
+R-U-R undirected pairs,1434
+Product-Time undirected pairs,1486705
+Combined pairs after dedup,1488139
+Final directed edge count for PyG,2976278
